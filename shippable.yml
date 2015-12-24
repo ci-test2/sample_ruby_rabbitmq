@@ -1,9 +1,21 @@
 language: ruby
 rvm:
+  - 1.8.7
   - 1.9.3
+  - 2.0.0
+  - 2.1.5
+  - 2.2.1
+  
+build_image: drydock/u14rubpls:tip
+
 env:
   - CI_REPORTS=shippable/testresults COVERAGE_REPORTS=shippable/codecoverage
 
 services:
   - rabbitmq
 
+notifications:
+  email:
+    varsha@shippable.com
+    
+cache: true
