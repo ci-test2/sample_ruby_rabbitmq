@@ -8,4 +8,4 @@ env:
 services:
   - rabbitmq
 
-build_image: drydock/u12ruball:tip
+#build_image: drydock/u12ruball:tip
