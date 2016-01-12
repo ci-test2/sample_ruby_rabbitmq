@@ -1,4 +1,5 @@
 language: ruby
+
 rvm:
   - 1.9.3
 env:
@@ -7,3 +8,4 @@ env:
 services:
   - rabbitmq
 
+build_image: drydock/u12ruball:tip
